@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import "package:scoped_model/scoped_model.dart";
-import "NotesDBWorker.dart";
+import 'NotesDBWorker.dart';
 import "NotesList.dart";
 import "NotesEntry.dart";
 import "NotesModel.dart" show NotesModel, notesModel;
@@ -10,7 +10,7 @@ class Notes extends StatelessWidget{
   Notes(){
 
     print("## Notes.constructor");
-    notesModel.loadData("notes", NotesDbWorker.db);
+    notesModel.loadData("notes", NotesDBWorker.db);
   }
 
   @override
@@ -28,7 +28,7 @@ class Notes extends StatelessWidget{
             );
           },
         )
-    )
+    );
   }
 
 }
