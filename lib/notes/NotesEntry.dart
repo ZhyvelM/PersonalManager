@@ -92,7 +92,7 @@ class NotesEntry extends StatelessWidget{
                                   shape: Border.all(color: Colors.red,width: 18) +
                                     Border.all(
                                       width: 6,
-                                      color: notesModel.color == "red" ? Colors.red : Theme.of(inContext)
+                                      color: notesModel.color == "red" ? Colors.red : Theme.of(inContext).canvasColor
                                     )
                                 ),
                               ),
