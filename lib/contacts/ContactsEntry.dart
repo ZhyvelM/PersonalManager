@@ -35,8 +35,8 @@ class ContactsEntry extends StatelessWidget {
     print("## ContactsEntry.build()");
 
     if (contactsModel.entityBeingEdited != null) {
-      _nameEditingController.text = contactsModel.entityBeingEdited.title;
-      _phoneEditingController.text = contactsModel.entityBeingEdited.content;
+      _nameEditingController.text = contactsModel.entityBeingEdited.name;
+      _phoneEditingController.text = contactsModel.entityBeingEdited.phone;
       _emailEditingController.text = contactsModel.entityBeingEdited.email;
     }
 
