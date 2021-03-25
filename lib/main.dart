@@ -9,6 +9,7 @@ import 'utils.dart' as utils;
 
 void main() {
   startMeUp() async{
+    WidgetsFlutterBinding.ensureInitialized();
     Directory docsDir = await getApplicationDocumentsDirectory();
     utils.docsDir = docsDir;
     runApp(FlutterManager());
@@ -48,7 +49,10 @@ class FlutterManager extends StatelessWidget{
           ),
           body: TabBarView(
             children: [
-              Appointments(),Contacts(),Notes(),Tasks(),
+              Appointments(),
+              Contacts(),
+              Notes(),
+              Tasks(),
             ],
           ),
         ),
